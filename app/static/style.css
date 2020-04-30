@@ -186,35 +186,39 @@ a {
 }
 
 .imagebanner {
-	text-align: center;
-	position: center;
-	width: 100%; /* for IE 6 */
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 1400px; /* for IE 6 */
 }
 
+
 h2 {
-	position: absolute;
-	top: 220px;
-	float: left;
-	left: 50px;
+    position: absolute;
+    top: 180px;
+    float: left;
+    left: 50px;
 }
 
 h2 span {
-	color:#FFFFFF;
-	font: bold 45px ChaletE, Sans-Serif;
+    color:#FFFFFF;
+    font: bold 45px ChaletE, Sans-Serif;
 }
+
 
 .profilTitle{
-   position: absolute;
-	top: 150px;
-	float: left;
-	right: 100px;
+    position: absolute;
+    top: 40px;
+    float: left;
+    right: 100px;
 }
 
+
 .profil{
-   position: absolute;
-	top: 220px;
-	float: left;
-	right: 110px;
+    position: absolute;
+    top: 100px;
+    float: left;
+    right: 110px;
 }
 
 h3 span {
@@ -235,7 +239,7 @@ p {
 
 #btnEdit{
     position: absolute;
-	top: 480px;
+	top: 390px;
 	float: left;
 	right: 210px;
     border-radius: 5px;
