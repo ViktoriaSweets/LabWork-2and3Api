@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div id="container">
+        <h1 id = "header">Фотогалерея</h1>
+        <div id = "originalWindow">
+            <div class="images">
+                <img class = "Picture" src="{{ url_for('static', filename='photogallery/img_top.jpg') }}" onLoad="Small_img(this)">
+            </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/escalating.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/nail.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+             <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/cosmetologist.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/visagiste.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/stylist.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/hairstyle.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+            <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/makeup.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+             <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/carbon peeling.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+             <div class="images">
+			    <img class = "Picture" src="{{ url_for('static', filename='photogallery/eyelashes.jpg') }}" onLoad="Small_img(this)">
+		    </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="popupWindow" >
+        <div class="button" id="prev"></div>
+        <div class="content">
+            <img id="fullImg" src="">
+        </div>
+        <div class="button" id="next" ></div>
+        <div class="button" id="close"  ></div>
+        <div class="button" id="pause"  ></div>
+        <div class="button" id="play"  ></div>
+    </div>
+
+{% endblock %}

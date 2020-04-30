@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="imagebanner">
+    <img id = "indexFon"src="{{ url_for('static', filename='images/Image2.jpeg') }}" width="1330" alt="Добро пожаловать">
+    <h2><span>{{ current_user.name }},<br> Вас приветствует <br>Салон красоты «Преображение»!</span></h2>
+</div>
+<div class="mainContainer">
+    <p>Мы стремимся оказывать качественные услуги с высоким уровнем сервиса. Мы благодарны нашим клиентам за оказанное доверие и положительные отзывы о совместной работе.</p>
+</div>
+<div class="mainContainer">
+    <p>Оставьте отзыв.</p>
+</div>
+    {% if form %}
+    <form id = "post" class="mainContainer" action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.post.label }}<br>
+            {{ form.post(cols=64, rows=10) }}<br>
+            {% for error in form.post.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    {% endif %}
+<hr>
+<p class="mainContainer">Отзывы:</p>
+    {% for post in posts %}
+        {% include '_post.html' %}
+    {% endfor %}
+
+{% endblock %}

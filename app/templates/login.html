@@ -1,0 +1,35 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - microblog</title>
+        {% else %}
+        <title>microblog</title>
+        {% endif %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body >
+    <div class="forms">
+    <h1 align="center">Авторизация</h1>
+    <form  action="" method="post">
+        {{ form.hidden_tag() }}
+        <div class="centerForm">
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div class="centerForm">
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </div>
+        <div class="centerForm">{{ form.remember_me() }} {{ form.remember_me.label }}</div>
+        <div class="centerForm">{{ form.submit() }}</div>
+    </form>
+        <div class="centerForm">Впервые на сайте? <a href="{{ url_for('register') }}">Зарегистрироваться!</a></div>
+    </div>
+    </body>
+</html>
