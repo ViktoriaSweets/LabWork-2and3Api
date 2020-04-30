@@ -40,9 +40,9 @@ body {
 .forms{
 	padding: 50px;
 	background: #AD878F;
-	position: fixed; 
+	position: fixed;
 	color: #000000;
-	top: 50%; 
+	top: 50%;
 	left: 50%;
 	border-radius: 25px;
 	-webkit-transform: translate(-50%, -50%);
@@ -187,38 +187,35 @@ a {
 
 .imagebanner {
     margin: auto;
-    text-align: center;
-    position: relative;
-    width: 1400px; /* for IE 6 */
+	text-align: center;
+	position: relative;
+	width: 1350px; /* for IE 6 */
 }
 
-
 h2 {
-    position: absolute;
-    top: 180px;
-    float: left;
-    left: 50px;
+	position: absolute;
+	top: 180px;
+	float: left;
+	left: 50px;
 }
 
 h2 span {
-    color:#FFFFFF;
-    font: bold 45px ChaletE, Sans-Serif;
+	color:#FFFFFF;
+	font: bold 45px ChaletE, Sans-Serif;
 }
-
 
 .profilTitle{
-    position: absolute;
-    top: 40px;
-    float: left;
-    right: 100px;
+   position: absolute;
+	top: 40px;
+	float: left;
+	right: 100px;
 }
 
-
 .profil{
-    position: absolute;
-    top: 100px;
-    float: left;
-    right: 110px;
+   position: absolute;
+	top: 100px;
+	float: left;
+	right: 110px;
 }
 
 h3 span {
