@@ -23,7 +23,7 @@ DG.then(function() {
 	DG.marker([52.7261859, 41.4516852]).addTo(map).bindPopup('<div style = "text-align: center;">Время работы:<br> Пн-Пт, с 9 до 19 <br> Сб-Вс, с 9 до 17<br>Адрес:Тамбов, ул. Октябрьская 11А</div>');
 	DG.marker([52.7182310, 41.4629020]).addTo(map).bindPopup('<div style = "text-align: center;">Время работы:<br> Пн-Пт, с 9 до 19 <br> Сб-Вс, с 9 до 17<br>Адрес:Тамбов, ул.Ленинградская 1</div>');
 	DG.marker([52.7422954,41.4502331]).addTo(map).bindPopup('<div style = "text-align: center;">Время работы:<br> Пн-Пт, с 9 до 19 <br> Сб-Вс, с 9 до 17<br>Адрес:Тамбов, ул.Советская 184</div>');
-	map.locate({setView: false, watch: false})
+	map.locate({setView: false, watch: true})
 		.on('locationfound', function(e) {
         DG.marker([e.latitude, e.longitude]).addTo(map).bindLabel('Вы находитесь здесь!', {
         static: true });
